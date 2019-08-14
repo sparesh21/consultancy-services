@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'), url('fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('fonts/oswald-regular-webfont.woff2') format('woff2'), url('fonts/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* common css starts */
+body {
+    font-family: 'open_sansregular';
+    font-size: 16px;
+    color: #fff;
+    background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'oswaldregular';
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 800;
+}
+
+p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 800;
+}
+
+a, a:hover {
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s all ease;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* common css ends */
+.top-patch {
+    background: #07254f;
+    padding: 30px 0 40px;
+}
+
+.social-links ul li a {
+    color: #fff;
+}
+
+.social-links ul li a:hover {
+    color: #f7811e;
+}
+
+.social-links ul li {
+    margin-right: 16px;
+}
+
+.social-links ul li:last-child {
+    margin-right: 0;
+}
+
+header {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+header .navbar {
+    background: #fff;
+    padding: 16px 20px;
+    box-shadow: 0px 1px 6px rgb(0, 0, 0, .2);
+}
+
+header .navbar-nav {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header .navbar-nav li {
+    margin-right: 16px;
+}
+
+header .navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: #07254f;
+    font-family: 'oswaldregular';
+    font-size: 16px;
+}
+
+header .navbar-light .navbar-nav .nav-link:hover {
+    color: #f7811e;
+}
+
+header .navbar-light .navbar-nav .active>.nav-link {
+    color: #f7811e;
+}
+
+.consulting-slider {
+    background: #07254f;
+}
+
+.consulting-home {
+    height: 80vh;
+    overflow: hidden;
+}
+
+.consulting-slider {
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+}
+
+.content-box {
+    background: rgba(247, 129, 30, .8);
+    padding: 30px 30px;
+    max-width: 650px;
+}
+
+.content-box h2 {
+    font-size: 60px;
+    line-height: 1;
+}
+
+.content-box p {
+    margin-top: 21px;
+}
+
+.features-container {
+    background: #07254f;
+    padding: 45px 0 95px;
+}
+
+.features-items h3 {
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.features-items p {
+    font-size: 16px;
+    color: #c3cfdc;
+    margin-top: 30px;
+}
+
+.development-container .development-panel {
+    padding: 60px 80px;
+    background: #fff;
+    position: relative;
+    border-bottom: 2px solid #dadada;
+}
+
+.development-container .development-panel:before {
+    content: '';
+    background: #ebeced url(../images/development-bg.png) no-repeat;
+    background-position: right bottom;
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.development-container .development-panel.implementation:before {
+    background: #ebeced url(../images/support-bg.png) no-repeat;
+    background-position: right bottom;
+}
+
+.development-container .development-panel.advice:before {
+    background: #ebeced url(../images/advice-bg.png) no-repeat;
+    background-position: right bottom;
+}
+
+.development-container .development-panel:after {
+    content: '';
+    background: #ffffff;
+    width: 60%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.development-container .sevice-content {
+    position: relative;
+    z-index: 2;
+}
+
+.development-container .sevice-content .service-header {
+    margin-bottom: 50px;
+}
+
+.development-container .sevice-content h4 {
+    color: #f7811e;
+    font-size: 60px;
+}
+
+.service-tabs .tabs-btn ul li {
+    margin-bottom: 40px;
+    transition: .4s all ease;
+}
+
+.service-tabs .tabs-btn ul li.active {
+    transition: .4s all ease;
+}
+
+.service-tabs .tabs-btn ul li a {
+    font-size: 24px;
+    color: #b4b3b3;
+    font-weight: 600;
+    padding-right: 40px;
+    background-position: 100% 60%;
+    text-transform: capitalize;
+}
+
+.service-tabs .tabs-btn ul li.active a, .development-container .service-tabs .tabs-btn ul li a:hover {
+    color: #07254f;
+    background: url(../images/next.png) no-repeat;
+    background-position: 100% 60%;
+}
+
+.service-tabs .tabs-content p {
+    color: #232323;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.service-tabs .tabs-content h5 {
+    color: #f7811e;
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+
+.tabs-content .all {
+    display: none;
+}
+
+#advice-btns .tabs-content .all:first-child, #imple-btns .tabs-content .all:first-child, #dev-btns .tabs-content .all:first-child {
+    display: block;
+}
+
+footer {
+    background: #2e3336;
+    padding: 50px 0;
+}
+
+.sq-container {
+    background: #393f42;
+    border: none;
+    padding: 30px;
+}
+
+.sq-container h5 {
+    text-transform: uppercase;
+    color: #d5dfe5;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.sq-container h5:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    background: #f7811e;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+}
+
+.sq-container p {
+    color: #cccccc;
+    font-size: 14px;
+}

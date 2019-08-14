@@ -1,0 +1,46 @@
+@media screen and (max-width:768px) {
+    .display-flex {
+        display: block;
+    }
+    .consulting-img {
+        width: 100%;
+    }
+    .consulting-con {
+        width: 100%;
+    }
+    .features-item {
+        width: 100%;
+        padding-bottom: 50PX;
+    }
+    .development-left-con {
+        width: 100%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .tab {
+        margin-top: 100px;
+    }
+    .development-right-con {
+        width: 100%;
+        padding: 50px 100px;
+    }
+}
+@media screen and (max-width:767px) {
+    h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .consulting-con {
+        padding: 50px;
+    }
+    button.active.tablinks, button.tablinks {
+        font-size: 22px;
+    }
+    button.active.tablinks::after {
+        border-width: 4.5px 0 4.5px 10px;
+    }
+    .development-right-con {
+        padding: 50px 20px;
+    }
+}
